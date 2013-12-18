@@ -28,7 +28,7 @@ $(function(){
 			type: 'GET',
 			url: 'http://www.argosapps.fr/bapp_retrop/server/bugs.php?&jsoncallback=?',
 			dataType: 'JSONp',
-			timeout: 1000,
+			timeout: 8000,
 			success: function(data) {
 				$.each(data, function(i,item){
 					bugs.append('<li>'+item.pseudo);
